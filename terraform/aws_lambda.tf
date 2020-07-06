@@ -4,7 +4,7 @@ resource "aws_lambda_function" "lambda_function" {
   handler       = "main.handler"
 
   s3_bucket = aws_s3_bucket.s3_bucket.id
-  s3_key    = var.s3_key
+  s3_key    = "releases/${var.artifact_version}"
 
   runtime = "python3.8"
 

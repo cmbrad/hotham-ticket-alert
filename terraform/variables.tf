@@ -4,4 +4,6 @@ variable "application" {
 
 variable "environment" {}
 
-variable "s3_key" {}
+variable "artifact_version" {
+  default = "v1.0.0.zip"
+}
